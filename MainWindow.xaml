@@ -8,7 +8,7 @@
         Title="Gracias" Height="565" Width="800" Icon="/regalo.png">
     <Grid>
         <StackPanel Orientation="Vertical">
-            <MediaElement x:Name="MyVideo" Source="\enel1.mp4" LoadedBehavior="Manual" Margin="15" Height="436" Width="760"></MediaElement>
+            <MediaElement x:Name="MyVideo" Source="/enel1.mp4" LoadedBehavior="Manual" Margin="15" Height="436" Width="760"></MediaElement>
             <StackPanel Orientation="Horizontal" Margin="10">
                 <Button x:Name="ReproducirBtn" Content="Reproducir" HorizontalContentAlignment="Left" Width="102" Margin="10,0" Height="40" Click="Reproducir_Pausa"  >
                     <Button.Background>

@@ -32,7 +32,7 @@ namespace Enel
             this.Pausar.Visibility = Visibility.Collapsed;
             int num = locate.IndexOf("bin");
             string subCad = locate.Substring(0, num);
-            string cad = subCad + ("Videos\\enel1.mp4");
+            string cad = subCad + ("\\enel1.mp4");
             MyVideo.Source = new Uri(cad, UriKind.Absolute);
 
 
