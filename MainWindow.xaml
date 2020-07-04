@@ -1,0 +1,40 @@
+﻿<Window x:Class="Enel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Enel"
+        mc:Ignorable="d"
+        Title="Gracias" Height="565" Width="800" Icon="/regalo.png">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <MediaElement x:Name="MyVideo" Source="\enel1.mp4" LoadedBehavior="Manual" Margin="15" Height="436" Width="760"></MediaElement>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Button x:Name="ReproducirBtn" Content="Reproducir" HorizontalContentAlignment="Left" Width="102" Margin="10,0" Height="40" Click="Reproducir_Pausa"  >
+                    <Button.Background>
+                        <ImageBrush ImageSource="/reproducir.png" Stretch="None" AlignmentX="Right"/>
+                    </Button.Background>
+
+                </Button>
+                <Button x:Name="Pausar" Content="Pausar" Margin="10,0" HorizontalContentAlignment="Left" Width="80" Height="40" Click="Pausar_Click">
+                    <Button.Background>
+                        <ImageBrush AlignmentX="Right" Stretch="None" ImageSource="/pausa.png" />
+                    </Button.Background>
+
+
+                </Button>
+                <Button x:Name="DetenerBtn" Height="40" HorizontalContentAlignment="Left" Content="Detener" Margin="10,0" Width="80" Click="DetenerBtn_Click" RenderTransformOrigin="117.6,190.814"  >
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="/stop1normalred_26963.png" AlignmentX="Right"/>
+                    </Button.Background>
+
+
+
+                </Button>
+
+            </StackPanel>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

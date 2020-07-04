@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="pausa.png" />
+    <None Remove="regalo.png" />
+    <None Remove="reproducir.png" />
+    <None Remove="stop1normalred_26963.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="pausa.png" />
+    <Resource Include="regalo.png" />
+    <Resource Include="reproducir.png" />
+    <Resource Include="stop1normalred_26963.png" />
+  </ItemGroup>
+
+</Project>
